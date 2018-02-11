@@ -17,7 +17,7 @@ char *str;
 // To get a single line
 get_next_line(fd, &str);
 ...
-ft_strdel(&line); // You should free after you're done using your line
+ft_strdel(&str); // You should free after you're done using your line
 
 // To read a whole file
 while (get_next_line(fd, &str))

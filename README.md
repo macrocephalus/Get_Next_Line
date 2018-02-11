@@ -23,10 +23,10 @@ ft_strdel(&line); // You should free after you're done using your line
 while (get_next_line(fd, &str))
 {
 	// process output it
-	ft_putstr(line);
+	ft_putstr(str);
 	
 	// free the line to avoid leaking memory
-	ft_strdel(&line);
+	ft_strdel(&str);
 }
 
 ```
